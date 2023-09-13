@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+.navbar{
+    background-color: rgb(234, 207, 250);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.navbar-toggle-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 20px;
+}
+.navbar-toggle-btn span{
+    display: block;
+    background-color: black;
+    width: 25px;
+    height: 2px;
+    transition: 0.25s ease;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    font-size: 18px;
+}
+button{
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+}
+.navbar-toggle-btn.active .one {
+    transform: rotate(45deg) translateY(3px);
+}
+.navbar-toggle-btn.active .two {
+    display: none;
+}
+.navbar-toggle-btn.active .three {
+    transform: rotate(-45deg) translateY(-3px);
+}
+.navbar-nav{
+    position: fixed;
+    background-color: rgb(234, 207, 250);
+    top: 60px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s ease;
+    pointer-events: none;
+}
+.navbar-nav a{
+    color: rgb(80, 6, 89);
+    display: block;
+}
+.navbar-nav.active{
+    top: calc(60px + 20px);
+    opacity: 1;
+    box-shadow: 0 0 100px 100px hsla(233, 26%, 24%, 0.2);
+    pointer-events: all;
+}
+.btn-primary{
+    background: linear-gradient(45deg, rgba(239, 209, 249, 0.267),rgb(194, 27, 232));
+    border: 1px solid white;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    margin: auto;
+    transition: 0.25s ease;
+}
+.btn-primary:hover{
+    opacity: 0.5;
+}
+.navbar .btn-primary{
+    display: none;
+}
+main{
+    overflow: hidden;
+}
+.home{
+    background-color: rgb(234, 207, 250);
+    padding-bottom: 60px;
+}
+.home-img-box{
+    background: rgb(234, 207, 250) no-repeat top;
+    background-size: cover;
+    padding: 0 ;
+    margin-bottom: 40px;
+}
+.home-img-box .home-img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: bottom;
+}
+.home-title{
+    font-size: 38px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.home-text{
+    margin: auto;
+    color: rgb(80, 6, 89);
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+.service{
+    padding: 60px 10px;
+    background-color: rgb(234, 207, 250);
+}
+.section-title{
+    color: black;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-text{
+    color: rgb(80, 6, 89);
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.service-card-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+.service-card{
+    text-align: center;
+}
+.service-card .card-icon{
+    margin: auto;
+    margin-bottom: 30px;
+}
+.service-card .card-title{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.service-card .card-text{
+    font-size: 18px;
+    color: rgb(80, 6, 89);
+    list-style:1.7;
+}
+.blog{
+    padding: 60px 10px;
+    background-color: rgb(234, 207, 250);
+}
+.blog .section-title{
+    margin-bottom: 30px;
+}
+.article-card-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+.article-card{
+    border-radius: 5px;
+    background-color: rgb(234, 207, 250);
+    overflow: hidden;
+}
+.article-card .card-head{
+    height: 200px;
+}
+.article-card .card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.article-card .card-body{
+    padding: 20px;
+}
+.article-card .article-author{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: rgb(80, 6, 89);
+    font-weight: 600;
+}
+.article-card .card-title{
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+    transition: 0.25s ease;
+}
+.article-card .card-title:hover{
+    color: rgb(80, 6, 89);
+}
+.article-card .card-text{
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.article-card .card-text:hover{
+    color: rgb(80, 6, 89);
+}
+footer{
+    background-color: rgb(204, 88, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 10px;
+}
+.footer-brand{
+    margin: auto;
+    margin-bottom: 30px;
+}
+.social-link{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.social-link ion-icon{
+    color: white;
+    font-size: 30px;
+    display: block;
+    transition: 0.25s ease;
+}
+.social-link ion-icon:hover{
+    color: rgb(80, 6, 89);
+}
+.footer-nav{
+    margin-bottom: 30px;
+}
+.footer-nav ul, .footer-nav ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+.footer-nav a{
+    color: white;
+    font-size: 18px;
+    transition: 0.25s ease;
+}
+.footer-nav a:hover{
+    color: rgb(80, 6, 89);
+}
+footer .btn-primary{
+    margin-bottom: 30px;
+}
+.copyright{
+    color: rgb(80, 6, 89);
+    font-size: 18px;
+}
+
+/*--------------media queries---------------*/
+@media (min-width:768px){
+    .home-text{
+        font-size: 18px;
+        max-width: 600px;
+    }
+    .section-text{
+        margin: auto;
+        margin-bottom: 50px;
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+}
+@media (min-width:1024px){
+    header{
+        position: static;
+    }
+    .navbar{
+        padding: 0 10px;
+    }
+    .navbar-toggle-btn{
+        display: none;
+    }
+    .navbar-nav{
+        position:static;
+        padding: 0;
+        z-index: 0;
+        flex-direction: row;
+        gap: 30px;
+        opacity: 1;
+        pointer-events: all;
+    }
+    .navbar-nav a{
+        font-size: 18px;
+        color: rgb(80, 6, 89);
+        padding: 30px 0;
+        transition: 0.25s ease;
+    }
+    .navbar-nav a:hover{
+        color: white;
+    }
+    .navbar .btn-primary{
+        display: block;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

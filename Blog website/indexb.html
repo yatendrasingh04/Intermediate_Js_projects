@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <link rel="stylesheet" href="styleb.css">
+        <title>Blog Writing Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <h1>Write your Blog here !!</h1>
+                <h2>Blogging improves english and writing knowledge. </h2>
+                <h2>Keep writing until you feel bored !</h2>
+            </div>
+        </div>
+        <div class="blog-app">
+            <h2>Your Blog <img src="icon.png"></h2>
+            <div class="row">
+                <!--<input type="text" id="input-box" >-->
+                <textarea name="blog" id="blog" placeholder="Start writing your blog here..." 
+                    cols="30" rows="20">
+                </textarea> 
+                <!--to perform operation when user clicks on add button-->
+                <button onclick="addBlog()">Add</button> 
+            </div>
+            <ul id="list-container">
+                <!--<li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>-->
+            </ul>
+        </div>
+        
+        <script src="scriptb.js"></script>
+    </body>
+</html>

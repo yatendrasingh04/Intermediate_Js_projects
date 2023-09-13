@@ -1,0 +1,8 @@
+index.html =======>blog website page
+indexb.html=======>blog writing page
+indexin.html=======>sign in page ==>blog writing page (when user clicks on sign in button)
+indexr.html=======>sign up / sign in page ==>blog writing page (when user clicks on sign up button / if user clicks on sign in button, then it moves to sign in page not the indexin.html page)
+
+styler.css=======>this is used for both indexr and indexin.html
+styleb.css=======>for indexb.html
+style.css=======>for index.html

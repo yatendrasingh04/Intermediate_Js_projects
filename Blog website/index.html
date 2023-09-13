@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cb2f9d3842.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Blog <span>website</span></a>
+            <a href="indexr.html" class="login">Sign Up</a>
+            <a href="indexin.html" class="login">Sign In</a>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">Rookie Blogger</h2>
+            <span class="home-subtitle">Find new contents here...</span>
+        </div>
+    </section>
+    <!-------about----------->
+    <section class="about container" id="about">
+        <div class="contentBx">
+            <h2 class="titleText">What's going on in this world!?</h2>
+            <p class="title-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Autem tenetur, perferendis dolore, consectetur quos ab, ullam 
+                sunt error deleniti nesciunt maxime labore eum totam earum. 
+                Distinctio beatae cum aliquid aut. <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Autem tenetur, perferendis dolore, consectetur quos ab, ullam 
+                sunt error deleniti nesciunt maxime labore eum totam earum. 
+                Distinctio beatae cum aliquid aut. <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Autem tenetur, perferendis dolore, consectetur quos ab, ullam 
+                sunt error deleniti nesciunt maxime labore eum totam earum. 
+                Distinctio beatae cum aliquid aut. <br>
+                
+            </p>
+            <a href="#" class="btn2">Read More</a>
+        </div>
+        <div class="imgBx">
+            <img src="blog1.webp" class="fitBg" alt="">
+        </div>
+    </section>
+
+    <!---------post using filters section------->
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('tech')">Tech</p>
+        <p class="tab-links" onclick="opentab('news')">News</p>
+    </div>
+    
+    <div class="tab-contents active-tab" id="tech">
+        <!--post 1-->
+        <div class="post-box tech">
+            <img src="tech1.jpg" class="post-img" alt="">
+            <div class="post-description">
+                <h2 class="category">Tech</h2>
+                <a href="#" class="post-title">Title 1</a>
+                <span class="post-date">14 sept 2023</span>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Asperiores rem minus deleniti saepe nihil 
+                    animi quae temporibus explicabo porro, est quos rerum nisi, 
+                    debitis ratione ipsa officiis ipsum, eligendi fugit?
+                </p>
+            </div>
+            <div class="profile">
+                <img src="profile-blog.jpg" class="profile-img" alt="">
+                <span class="profile-name">yatendra singh </span>
+            </div>
+        </div>
+        <!--post 2-->
+        <div class="post-box tech">
+            <img src="tech2.jpg" class="post-img" alt="">
+            <div class="post-description">
+                <h2 class="category">Tech</h2>
+                <a href="#" class="post-title">Title 1</a>
+                <span class="post-date">14 sept 2023</span>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Asperiores rem minus deleniti saepe nihil 
+                    animi quae temporibus explicabo porro, est quos rerum nisi, 
+                    debitis ratione ipsa officiis ipsum, eligendi fugit?</p>
+            </div>
+            <div class="profile">
+                <img src="profile-blog.jpg" class="profile-img" alt="">
+                <span class="profile-name">yatendra singh</span>
+            </div>
+        </div>
+        <!--post 3-->
+        <div class="post-box tech">
+            <img src="tech3.jpg" class="post-img" alt="">
+            <div class="post-description">
+                <h2 class="category">Tech</h2>
+                <a href="#" class="post-title">Title 1</a>
+                <span class="post-date">14 sept 2023</span>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Asperiores rem minus deleniti saepe nihil 
+                    animi quae temporibus explicabo porro, est quos rerum nisi, 
+                    debitis ratione ipsa officiis ipsum, eligendi fugit?</p>
+            </div>
+            <div class="profile">
+                <img src="profile-blog.jpg" class="profile-img" alt="">
+                <span class="profile-name">yatendra singh</span>
+            </div>
+        </div>
+    </div>   
+    <div class="tab-contents" id="news">
+        <!--post 4-->
+        <div class="post-box news">
+            <img src="news3.jpg" class="post-img" alt="">
+            <div class="post-description">
+                <h2 class="category">News</h2>
+                <a href="#" class="post-title">Title 1</a>
+                <span class="post-date">14 sept 2023</span>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Asperiores rem minus deleniti saepe nihil 
+                    animi quae temporibus explicabo porro, est quos rerum nisi, 
+                    debitis ratione ipsa officiis ipsum, eligendi fugit?</p>
+            </div>
+            <div class="profile">
+                <img src="profile-blog.jpg" class="profile-img" alt="">
+                <span class="profile-name">rohan</span>
+            </div>
+        </div>
+        <!--post 5-->
+        <div class="post-box news">
+            <img src="news1.jpg" class="post-img" alt="">
+            <div class="post-description">
+                <h2 class="category">News</h2>
+                <a href="#" class="post-title">Title 1</a>
+                <span class="post-date">14 sept 2023</span>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Asperiores rem minus deleniti saepe nihil 
+                    animi quae temporibus explicabo porro, est quos rerum nisi, 
+                    debitis ratione ipsa officiis ipsum, eligendi fugit?</p>
+            </div>
+            <div class="profile">
+                <img src="profile-blog.jpg" class="profile-img" alt="">
+                <span class="profile-name">Roy</span>
+            </div>
+        </div>
+        <!--post 6-->
+        <div class="post-box news">
+            <img src="news2.jpg" class="post-img" alt="">
+            <div class="post-description">
+                <h2 class="category">News</h2>
+                <a href="#" class="post-title">Title 1</a>
+                <span class="post-date">14 sept 2023</span>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Asperiores rem minus deleniti saepe nihil 
+                    animi quae temporibus explicabo porro, est quos rerum nisi, 
+                    debitis ratione ipsa officiis ipsum, eligendi fugit?</p>
+            </div>
+            <div class="profile">
+                <img src="profile-blog.jpg" class="profile-img" alt="">
+                <span class="profile-name">hasnain</span>
+            </div>
+        </div>
+    </div>
+
+    <!------footer section------>
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <ul class="sci">
+                    <li><a href="#"><i class="bx fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="bx fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="bx fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="bx fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>SECTOR-4 ROHINI <br>ROHINI DELHI <br>INDIA</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p><a href="mailto:yatendrasingh0473@gmail.com">yatendrasingh0473@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" 
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHP
+        Hksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script> 
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

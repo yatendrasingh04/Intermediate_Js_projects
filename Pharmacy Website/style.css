@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+.nav{
+    box-shadow: rgb(122, 55, 55) 0 0 5px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+.nav img{
+    width: 100px;
+    height: 100px;
+    margin: 7px 35px;
+}
+.nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: auto 20px;
+}
+.nav ul li,
+.nav ul li a{
+    margin: 10px 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;cursor: pointer;
+}
+.nav ul li p{
+    margin-left: 5px;
+    font-size: 18px;
+    color: black;
+}
+.nav ul li p:hover{
+    color: rgb(60, 41, 169) ;
+}
+.nav ul li a i{
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+.products{
+    padding-top: 150px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+}
+.products div img{
+    width: 100px;
+    height: 100px;
+}
+.products div h3{
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+.banner{
+    background-color: rgb(255, 255, 255);
+
+}
+.banner .ads{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.banner .ads a{
+    gap: 50px;
+}
+.banner .ads a img{
+    border-radius: 10px;
+    width: 600px;
+}
+.services{
+    background-color: rgb(255, 255, 255);
+}
+.services h1{
+    text-align: center;
+    font-weight: 600;
+    padding: 20px;
+}
+.services .services-list{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    gap: 50px;
+}
+.services .services-list .ser{
+    gap: 50px;
+}
+.services .services-list .ser img{
+    width: 300px;
+    height: 250px;
+}
+.services .services-list .ser h3{
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+.order-col-1{
+    float: left;
+    padding: 25px;
+}
+.order-col-1 h3{
+    font-weight: 600;
+    padding: 15px;
+}
+.order-col-1 h4{
+    font-weight: 600;
+    padding: 15px;
+}
+.order-col-1 input{
+    padding: 15px;
+}
+.order-col-2{
+    float: right;
+    padding: 25px;
+}
+.order-col-2 h5{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+}
+.order-col-2 p{
+    padding: 10px;
+}
+.lab-tests{
+    padding: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.lab-tests .tests{
+    display: flex;
+    justify-content: center;
+}
+.lab-tests .tests img{
+    padding: 20px;
+}
+.payment-offers{
+    background-color: rgb(255, 255, 255);
+}
+.payment-offers h1{
+    font-weight: 600;
+    font-size: 40px;
+    padding: 15px;
+    text-align: center;
+}
+.payment-offers .offers{
+    padding: 25px;
+    text-align: center;
+}
+.payment-offers .offers img{
+    width: 700px;
+    padding: 15px;
+}
+.hero{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.hero h1{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 40px;
+    color: #000000;
+}
+.slide-row{
+    display: flex;
+    width: 3200px;
+    transition: 0.5s;
+}
+.slide-col{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+.user-img{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.user-img img{
+    height: 100%;
+    border-radius: 10px;   
+}
+.user-text{
+    background-color: rgb(252, 127, 127);
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #000000;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.user-text p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.user-text h3{
+    margin: 35px 0 5px;
+    color: rgb(255, 255, 255);
+}
+.container{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+.btn{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background-color: rgb(252, 127, 127);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.active{
+    width: 45px;
+}
+.testimonial{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.about-us{
+    text-align: center;
+    padding: 25px;
+    line-height: 50px;
+}
+.about-us .image img{
+    width: 600px;
+    padding: 25px;
+}
+.about-us .content p{
+    font-size: 18px;
+    list-style: none;
+}
+.contact-us{
+    background-color: gray;
+    text-align: center;
+    padding: 25px;
+    line-height: 50px;
+    font-weight: 600;
+}
+.contact-us a{
+    text-decoration: none;
+    list-style: none;
+}
+.contact-us a i{
+    font-size: 30px;
+    padding: 25px;
+}
